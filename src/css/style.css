@@ -228,6 +228,19 @@
     font-weight: 500;
     margin: 18px
   }
+
+  footer {
+    clear: both;
+    position: relative;
+    height: 200px;
+    margin-top: -200px;
+  }
+  .copyright {
+    margin-left: 20px;
+  }
+  .content {
+    margin-left: 10px;
+  }
   @media (max-width: 420px) {
     .sidebar li .tooltip{
       display: none;
