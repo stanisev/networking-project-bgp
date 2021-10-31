@@ -217,6 +217,11 @@
     transition: all 0.5s ease;
     z-index: 2;
   }
+  .bg-design {
+    background-image: url('../img/waves-bg.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
   .sidebar.open ~ .home-section{
     left: 250px;
     width: calc(100% - 250px);
@@ -224,26 +229,41 @@
   .home-section .text{
     display: inline-block;
     color: #11101d;
-    font-size: 25px;
+    font-size: 30px;
     font-weight: 500;
-    margin: 18px
+    margin: 20px
   }
-
-  footer {
-    clear: both;
-    position: relative;
-    height: 200px;
-    margin-top: -200px;
+  .footer {
+    margin-left: 100px;
+    margin-bottom: 10px;
+    text-align: left;
+    position: fixed;
+    bottom: 0;
+    left:0;
+    background-color: #dbe1f0;
+    width: 500px;
+    height: 20px;
   }
-  .copyright {
-    margin-left: 20px;
+  .open-footer {
+    margin-left: 250px;
   }
   .content {
-    margin-left: 10px;
+    margin: 0px 200px 0px 20px;
+    text-align: justify;
+    text-justify: inter-word;
+    font-size: 20px;
   }
   @media (max-width: 420px) {
+    .content {
+      margin: 0px 19px 0px 20px;
+      font-size: 16px;
+    }
     .sidebar li .tooltip{
       display: none;
+    }
+    .footer {
+      transform: scale(0.6);
+      margin-left: 0px;
     }
   }
   

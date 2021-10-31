@@ -19,12 +19,9 @@
     <link rel="stylesheet" href="src/css/style.css" />
 
     <link rel="icon" type="image/png" href="src/img/favicon.ico"/>
-
   </head>
 
   <body>
-
-    <body>
       <div class="sidebar">
         <div class="logo-details">
             <div class="logo_name">Меню</div>
@@ -91,23 +88,29 @@
          </li>
         </ul>
       </div>
-      <section class="home-section">
-          <div class="text title">
-            Компютърни Мрежи - <b>Протокол BGP</b></div>
+
+      <section class="home-section bg-design">
+          <div class="text title"><u>Компютърни Мрежи - <b>Протокол BGP</b></u></div>
           <div class="content">
-            В днешно време Интернет е жизненоважен ресурс за повечето организации.
+            Редундантните интернет връзки към доставчиците на интернет услуги <b>(ISP)</b> стават необходими за голям брой организации.
+            <b>Border Gateway Protocol</b> - <b><i>BGP</i></b> е протокол, използван за избор на маршрути за интернет трафик за отсъстващи редундантни интернет връзки с един или повече <b>ISP</b>-а.
+            BGP възникна от необходимостта да се контролира маршрутизирането и популяризирането на интернет трафик от <b>ISP</b>-а.
+            <br><br>
+            Когато беше създаден, BGP беше прост протокол за вектор на пътя <i>(path-vector protocol)</i>. 
+            С течение на времето бяха направени редица модификации на BGP протокола, позволяващи на доставчиците на интернет услуги да контролират интернет трафика. 
+            Усложняването на BGP протокола създава няколко ключовипроблеми, включително уязвимости в сигурността, голям брой конфигурационни грешки, както и конфликти между политиките на различни ISP.
           </div>
+
+          <section class="footer">
+            <div>
+              <a href="https://www.facebook.com/stefan.stanisev" target="_blank"><i class='bx-fw bx bxl-facebook'></i>Facebook</i></a>
+              <a href="https://twitter.com/SStanisev" target="_blank"><i class='bx-fw bx bxl-twitter'></i>Twitter</i></a>
+              <a href="https://www.instagram.com/sstanisev/" target="_blank"><i class='bx-fw bx bxl-instagram'></i>Instagram</i></a>
+              Stefan Stanishev © 2021
+            </div>
+          </section>
     
       </section>
-
-      <footer>
-        <div class="social">
-          <a href="#"><i class="ei:sc-facebook"></i></a>
-          <a href="#"><i class="icon ion-social-twitter"></i></a>
-          <a href="#"><i class="icon ion-social-facebook"></i></a>
-        </div>
-        <p class="copyright">Stefan Stanishev © 2021</p>
-      </footer>
       
     <script src="src/js/functions.js" type="text/javascript"></script>
   
