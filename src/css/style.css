@@ -253,6 +253,15 @@
     text-justify: inter-word;
     font-size: 20px;
   }
+  .opacity-applied {
+    opacity: 0.80;
+    max-width: 800px;
+    list-style-type:none
+  }
+  .list-stylin {
+    margin-left: 25px;
+    margin-top: 10px;
+  }
   @media (max-width: 420px) {
     .content {
       margin: 0px 19px 0px 20px;
