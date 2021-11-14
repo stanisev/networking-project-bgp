@@ -265,6 +265,17 @@
     margin-left: 25px;
     margin-top: 10px;
   }
+  .two-tables {
+    display: flex;
+    justify-content: space-between;
+    gap: 0.5em;
+  }
+  .two-opacity-applied {
+    opacity: 0.80;
+    max-width: 1200px;
+    justify-content: space-between;
+    list-style-type:none
+  }
   @media (max-width: 420px) {
     .content {
       margin: 0px 19px 0px 20px;
@@ -280,6 +291,10 @@
     .img-style {
       width: 95%;
       height: 95%;
+    }
+    .two-tables {
+      display: flex;
+      flex-direction: column;
     }
   }
   
