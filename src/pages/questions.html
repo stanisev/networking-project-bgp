@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <title>Протокол BGP - Въпроси</title>
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
+      integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
+      crossorigin="anonymous"
+    />
+    
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+
+    <link rel="stylesheet" href="../..//src/css/style.css" />
+
+    <link rel="icon" type="image/png" href="../../src/img/favicon.ico"/>
+  </head>
+
+  <body>
+      <div class="sidebar">
+        <div class="logo-details">
+            <div class="logo_name">Меню</div>
+            <i class='bx bx-menu' id="btn" ></i>
+        </div>
+        <ul class="nav-list">
+          <li>
+            <a href="../../index.html">
+              <i class='bx bx-grid-alt'></i>
+              <span class="links_name">Начало</span>
+            </a>
+             <span class="tooltip">Начало</span>
+          </li>
+          <li>
+           <a href="../../src/pages/concepts.html">
+             <i class='bx bx-bookmark-plus' ></i>
+             <span class="links_name">Концепции</span>
+           </a>
+           <span class="tooltip">Концепции</span>
+         </li>
+         <li>
+            <a href="../../src/pages/attributes.html">
+              <i class='bx bx-grid' ></i>
+              <span class="links_name">Атрибути</span>
+            </a>
+            <span class="tooltip">Атрибути</span>
+          </li>
+          <li>
+            <a href="../../src/pages/risks.html">
+              <i class='bx bx-shape-circle' ></i>
+              <span class="links_name">Рискове</span>
+            </a>
+            <span class="tooltip">Рискове</span>
+          </li>
+          <li>
+            <a href="../../src/pages/protection.html">
+              <i class='bx bx-lock' ></i>
+              <span class="links_name">Заштита</span>
+            </a>
+            <span class="tooltip">Заштита</span>
+          </li>
+          <li>
+            <a href="#">
+              <i class='bx bx-folder' ></i>
+              <span class="links_name">Допълнително</span>
+            </a>
+            <span class="tooltip">Допълнително</span>
+          </li>
+          <li class="profile">
+              <div class="profile-details">
+                <img src="../../src/img/profile_photo.jpg" alt="profileImg">
+                <div class="name_job">
+                  <div class="name">Stefan Stanishev</div>
+                  <div class="job">Software Engineer</div>
+                </div>
+              </div>
+          </li>
+         </ul>
+       </div>
+
+      <section class="home-section bg-design">
+          <div class="text title">Въпроси за BGP протокол</div>
+          <hr>
+          <div class="content">
+            <button type="button" class="btn btn-primary margin-style">Покажи отговорите</button>
+            <div">
+              <div class="list-group-item list-group-item-action flex-column align-items-start"  style="margin-bottom: 10px;">
+
+                <div class="d-flex w-100 justify-content-between list-group-item active">
+                  <h5 class="mb-1" style="margin-right: 20px"><b>Каква е целта на BGP?</b></h5>
+                  <small><i>Въпрос 1</i></small>
+                </div>
+                <small class="mb-1 q_answer" style="display: none;">Отговор: Основната цел на BGP е да обменя актуализации 
+                  за маршрутизиране като други протоколи за маршрутизиране, но BGP обикновено не обменя отделни мрежови маршрути 
+                  (но технически може), той обменя обобщения на мрежовите маршрути. Това е така, защото типичната употреба на BGP 
+                  е в много големи мрежи, включително Интернет.
+                </small>
+              </div>
+
+              <div class="list-group-item list-group-item-action flex-column align-items-start"  style="margin-bottom: 10px;">
+                <div class="d-flex w-100 justify-content-between list-group-item active">
+                  <h5 class="mb-1" style="margin-right: 20px"><b>Какъв е номерът на порта на BGP?</b></h5>
+                  <small><i>Въпрос 2</i></small>
+                </div>
+                <small class="mb-1 q_answer" style="display: none;">
+                  Отговор: BGP използва TCP порт 179.
+                </small>
+              </div>
+
+              <div class="list-group-item list-group-item-action flex-column align-items-start"  style="margin-bottom: 10px;">
+                <div class="d-flex w-100 justify-content-between list-group-item active">
+                  <h5 class="mb-1" style="margin-right: 20px"><b>Мога ли да стартирам два BGP процеса на един рутер?</b></h5>
+                  <small><i>Въпрос 3</i></small>
+                </div>
+                <small class="mb-1 q_answer" style="display: none;">
+                  Отговор: Не, не можете да стартирате два BGP процеса на един рутер.
+                </small>
+              </div>
+
+              <div class="list-group-item list-group-item-action flex-column align-items-start"  style="margin-bottom: 10px;">
+                <div class="d-flex w-100 justify-content-between list-group-item active">
+                  <h5 class="mb-1" style="margin-right: 20px"><b>Какво е рекурсивно търсене в BGP и как работи?</b></h5>
+                  <small><i>Въпрос 4</i></small>
+                </div>
+                <small class="mb-1 q_answer" style="display: none;">
+                  Отговор: Рутерът търси BGP маршрута и следващия BGP преход, за да достигне дестинация в отдалечената AS. 
+                  След това рутерът търси маршрута, за да достигне следващия BGP next-hop, използвайки IGP.
+                </small>
+              </div>
+
+              <div class="student-info">
+                <hr>
+                <h4>Контакти</h2>
+                <hr />
+                <b>Имена</b>: Стефан Станишев<br>
+                <b>Факултетен номер</b>: 123218001<br>
+                <b>Група</b>: 50 <br>
+                <b>Специалност</b>: КСИ<br>
+                <b>Дата</b>: 30.11.2021г.
+              </div>
+            </div>
+          </div><br><br>
+
+          <section class="footer">
+            <div>
+              <a href="https://www.facebook.com/stefan.stanisev" target="_blank"><i class='bx-fw bx bxl-facebook'></i>Facebook</i></a>
+              <a href="https://twitter.com/SStanisev" target="_blank"><i class='bx-fw bx bxl-twitter'></i>Twitter</i></a>
+              <a href="https://www.instagram.com/sstanisev/" target="_blank"><i class='bx-fw bx bxl-instagram'></i>Instagram</i></a>
+              Stefan Stanishev © 2021
+            </div>
+          </section>
+    
+      </section>
+      
+    <script src="../../src/js/functions.js" type="text/javascript"></script>
+  
+    
+  </body>
+</html>

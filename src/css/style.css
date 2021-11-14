@@ -276,6 +276,17 @@
     justify-content: space-between;
     list-style-type:none
   }
+  .three-imgs {
+    display: flex;
+    flex-direction: row;
+  }
+  .img-style-400 {
+    max-width: 400px;
+  }
+  .margin-style {
+    margin-left: 10px;
+    margin-bottom: 10px;
+  }
   @media (max-width: 420px) {
     .content {
       margin: 0px 19px 0px 20px;
@@ -293,6 +304,10 @@
       height: 95%;
     }
     .two-tables {
+      display: flex;
+      flex-direction: column;
+    }
+    .three-imgs {
       display: flex;
       flex-direction: column;
     }
