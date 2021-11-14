@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-    <title>Протокол BGP - Концепти</title>
+    <title>Протокол BGP - Message Types</title>
 
     <link
       rel="stylesheet"
@@ -16,9 +16,9 @@
     
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
 
-    <link rel="stylesheet" href="../..//src/css/style.css" />
+    <link rel="stylesheet" href="../../../src/css/style.css" />
 
-    <link rel="icon" type="image/png" href="../../src/img/favicon.ico"/>
+    <link rel="icon" type="image/png" href="../../../src/img/favicon.ico"/>
   </head>
 
   <body>
@@ -29,42 +29,42 @@
         </div>
         <ul class="nav-list">
           <li>
-            <a href="../../index.html">
+            <a href="../../../index.html">
               <i class='bx bx-grid-alt'></i>
               <span class="links_name">Начало</span>
             </a>
              <span class="tooltip">Начало</span>
           </li>
           <li>
-           <a href="#">
+           <a href="../../../src/pages/concepts.html">
              <i class='bx bx-bookmark-plus' ></i>
              <span class="links_name">Концепции</span>
            </a>
            <span class="tooltip">Концепции</span>
          </li>
          <li>
-            <a href="../../src/pages/attributes.html">
+            <a href="../../../src/pages/attributes.html">
               <i class='bx bx-grid' ></i>
               <span class="links_name">Атрибути</span>
             </a>
             <span class="tooltip">Атрибути</span>
           </li>
           <li>
-            <a href="../../src/pages/risks.html">
+            <a href="../../../src/pages/risks.html">
               <i class='bx bx-shape-circle' ></i>
               <span class="links_name">Рискове</span>
             </a>
             <span class="tooltip">Рискове</span>
           </li>
           <li>
-            <a href="../../src/pages/protection.html">
+            <a href="../../../src/pages/protection.html">
               <i class='bx bx-lock' ></i>
               <span class="links_name">Заштита</span>
             </a>
             <span class="tooltip">Заштита</span>
           </li>
           <li>
-            <a href="../../src/pages/questions.html">
+            <a href="../../../src/pages/questions.html">
               <i class='bx bx-folder' ></i>
               <span class="links_name">Допълнително</span>
             </a>
@@ -72,7 +72,7 @@
           </li>
           <li class="profile">
               <div class="profile-details">
-                <img src="../../src/img/profile_photo.jpg" alt="profileImg">
+                <img src="../../../src/img/profile_photo.jpg" alt="profileImg">
                 <div class="name_job">
                   <div class="name">Stefan Stanishev</div>
                   <div class="job">Software Engineer</div>
@@ -83,22 +83,22 @@
        </div>
 
       <section class="home-section bg-design">
-          <div class="text title"><u>Концепции за <b>BGP</b> протокол</u>:</div>
+          <div class="text title">Видове BGP съобщения</div>
           <hr>
           <div class="content">
+            BGP дефинира следните типове съобщения, които се обменят от съседите на BGP:<br><br>
             <ul class="list-group opacity-applied">
-                <li class="list-group-item d-flex justify-content-between align-items-center"><a href="../../src/pages/concepts/autonomous-system.html" class="padding-left-20">1. Автономна система</a>
-                  <span class="badge badge-primary badge-pill"><i class='bx bx-link-external'></i></span></li>
-                <li class="list-group-item d-flex justify-content-between align-items-center"><a href="../../src/pages/concepts/path-vector.html" class="padding-left-20">2. Характеристики на вектора на пътя <i>(Path Vector)</i> на протокола BGP</a>
-                  <span class="badge badge-primary badge-pill"><i class='bx bx-link-external'></i></span></li>
-                <li class="list-group-item d-flex justify-content-between align-items-center"><a href="../../src/pages/concepts/neighbours.html" class="padding-left-20">3. Връзки между съседи на BGP</a>
-                  <span class="badge badge-primary badge-pill"><i class='bx bx-link-external'></i></span></li>
-                <li class="list-group-item d-flex justify-content-between align-items-center"><a href="../../src/pages/concepts/table.html" class="padding-left-20">4. BGP таблица</a>
-                  <span class="badge badge-primary badge-pill"><i class='bx bx-link-external'></i></span></li>
-                <li class="list-group-item d-flex justify-content-between align-items-center"><a href="../../src/pages/concepts/message-types.html" class="padding-left-20">5. Видове BGP съобщения</a>
-                  <span class="badge badge-primary badge-pill"><i class='bx bx-link-external'></i></span></li>
-            </ul>
-        </div>
+              <li class="list-group-item list-group-item-primary"><i class='bx bxs-right-arrow-alt bx-fade-left-hover'></i><i>Open</i></li>
+              <li class="list-group-item list-group-item-info"><i class='bx bxs-right-arrow-alt bx-fade-left-hover'></i><i>Keepalive</i></li>
+              <li class="list-group-item list-group-item-primary"><i class='bx bxs-right-arrow-alt bx-fade-left-hover'></i><i>Update</i></li>
+              <li class="list-group-item list-group-item-info"><i class='bx bxs-right-arrow-alt bx-fade-left-hover'></i><i>Notification</i></li>
+            </ul><br>
+            След като се установи TCP връзка, <i>open</i> съобщение е първото, което се изпраща от двете страни на връзката. 
+            Ако <i>open</i> съобщение бъде прието, следва <i>keepalive</i>съобщение, което се изпраща като 
+            потвърждение от получателя на <i>open</i>> съобщение. След това се установява BGP връзката.
+             След това могат да се обменят <i>update</i>, <i>keepalive</i> и <i>notification</i> съобщения.
+          </div>
+      </div><br><br>
 
           <section class="footer">
             <div>
@@ -111,8 +111,7 @@
     
       </section>
       
-    <script src="../../src/js/functions.js" type="text/javascript"></script>
-  
-    
+    <script src="../../../src/js/functions.js" type="text/javascript"></script>
+
   </body>
 </html>

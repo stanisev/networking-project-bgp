@@ -8,9 +8,11 @@
       let answer_button = document.querySelector(".margin-style");
       let isShown = false;
 
-      answer_button.addEventListener("click", () => {
-        hideShowAnswers();
-       });
+      if (answer_button) {
+        answer_button.addEventListener("click", () => {
+          hideShowAnswers();
+         });
+      }
 
        function hideShowAnswers() {
          if (isShown) {
